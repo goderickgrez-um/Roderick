@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roderick Grez · Portafolio</title>
+<meta name="description" content="Portafolio de Roderick Grez: herramientas web, proyectos y trayectoria. Portfolio of web tools, projects and background.">
+<meta name="theme-color" content="#12313b">
+<meta property="og:title" content="Roderick Grez · Portafolio"><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2312313b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23e9c98a'%3ERG%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main" data-t="skip">Saltar al contenido</a>
+<header class="top">
+ <div class="bar w">
+  <a class="brand" href="#top" aria-label="Roderick Grez">RG</a>
+  <button id="menu" class="icon menu" type="button" aria-expanded="false" aria-controls="nav" data-al="menu"><span></span></button>
+  <nav id="nav" aria-label="Principal">
+   <a href="#about" data-t="n_about">Sobre mí</a><a href="#projects" data-t="n_proj">Proyectos</a><a href="#skills" data-t="n_skill">Competencias</a><a href="#exp" data-t="n_exp">Trayectoria</a>
+  </nav>
+  <div class="ctl">
+   <div class="seg" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" lang="es" aria-pressed="true">ES</button><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button></div>
+   <button id="a11y" class="icon" type="button" aria-expanded="false" aria-controls="panel" data-al="n_a11y"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><circle cx="12" cy="7.500" r="1.200" fill="currentColor"/><path d="M7 10.500l5 1.200 5-1.200M12 11.700v3.300m0 0l-2.200 3.500M12 15l2.200 3.500"/></svg></button>
+  </div>
+ </div>
+ <div id="panel" class="panel" role="dialog" aria-labelledby="p-t" hidden>
+  <h2 id="p-t" data-t="p_t">Accesibilidad y apariencia</h2>
+  <p class="lbl" data-t="p_theme">Apariencia</p>
+  <div class="seg wide" role="group" aria-labelledby="p-t"><button type="button" data-theme="auto" data-t="p_auto">Auto</button><button type="button" data-theme="light" data-t="p_light">Claro</button><button type="button" data-theme="dark" data-t="p_dark">Oscuro</button></div>
+  <p class="lbl" data-t="p_size">Tamaño del texto</p>
+  <div class="size"><button id="size-dn" type="button" aria-label="A−">A−</button><output id="size-v" aria-live="polite">100%</output><button id="size-up" type="button" aria-label="A+">A+</button></div>
+  <button id="sw-hc" class="sw" type="button" role="switch" aria-checked="false"><span data-t="p_hc">Alto contraste</span><i></i></button>
+  <button id="sw-mo" class="sw" type="button" role="switch" aria-checked="false"><span data-t="p_mo">Reducir movimiento</span><i></i></button>
+  <button id="sw-ft" class="sw" type="button" role="switch" aria-checked="false"><span data-t="p_ft">Fuente más legible</span><i></i></button>
+  <div class="row"><button id="reset" class="btn ghost" type="button" data-t="p_reset">Restablecer</button><button id="close" class="btn" type="button" data-t="close">Cerrar</button></div>
+ </div>
+</header>
+<main id="main">
+ <section id="top" class="hero w">
+  <div class="hero-t">
+   <h1>Roderick<br>Grez</h1>
+   <p id="hero-sub" class="lead">Estudiante de Ingeniería en Computación e Informática. Construyo herramientas web y resuelvo problemas técnicos.</p>
+   <div class="cta"><a class="btn" href="#projects" data-t="h_cta">Ver proyectos</a><a class="btn ghost" href="#cv" data-t="h_cv">Descargar CV</a></div>
+   <p id="ig" class="ig"></p>
+  </div>
+  <figure class="photo"><img src="assets/img/roderick.jpg" width="280" height="280" alt="Retrato de Roderick Grez / Portrait of Roderick Grez"></figure>
+  <ul id="stats" class="stats"></ul>
+ </section>
+ <section id="about" class="sec w"><h2 data-t="t_about">Sobre mí</h2><div class="two"><div id="about-text" class="prose"></div><dl id="facts" class="facts"></dl></div></section>
+ <section id="projects" class="sec w"><h2 data-t="t_proj">Proyectos</h2><p class="sub" data-t="t_proj_s"></p><div id="filters" class="filters" role="group" aria-label="Filtro"></div><ul id="grid" class="grid"></ul></section>
+ <section id="skills" class="sec w"><h2 data-t="t_skill">Competencias</h2><div id="skill-list" class="skills"></div></section>
+ <section id="exp" class="sec w"><h2 data-t="t_exp">Trayectoria</h2><ol id="exp-list" class="tl"></ol><h2 class="h2b" data-t="t_edu">Formación</h2><ol id="edu" class="tl"></ol></section>
+</main>
+<footer id="cv" class="foot"><div class="w"><h2 data-t="cv_t">Descarga mi currículum</h2><p data-t="cv_s"></p><a id="cv-btn" class="btn big" href="assets/cv/CV_Roderick_Grez_General.pdf" data-t="cv_b">Descargar currículum</a><p class="fine" data-t="foot"></p></div></footer>
+<noscript><p class="w">Activa JavaScript para ver el portafolio. Enlaces: <a href="https://goderickgrez-um.github.io/Gallery-tsf/">Galería</a>, <a href="https://goderickgrez-um.github.io/3DDice/">Dados 3D</a>, <a href="https://goderickgrez-um.github.io/NaipeStudio/">Naipe</a>, <a href="https://goderickgrez-um.github.io/TierlistGenerator/">Escalafón</a>, <a href="https://goderickgrez-um.github.io/ColorSeparator/">Separador de capas</a>.</p></noscript>
+<script src="data/i18n.js"></script><script src="data/profile.js"></script><script src="data/projects.js"></script>
+<script src="assets/js/prefs.js"></script><script src="assets/js/art.js"></script><script src="assets/js/render.js"></script><script src="assets/js/app.js"></script>
+</body>
+</html>
