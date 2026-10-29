@@ -14,7 +14,7 @@ window.PROJECTS = [
    name:{es:'Paper Font Studio',en:'Paper Font Studio'},
    desc:{es:'De tu letra en papel a una fuente instalable: genera la plantilla, vectoriza escaneos o fotos, permite retocar glifos y exporta la tipografía.',en:'From your handwriting on paper to an installable font: builds the template, vectorizes scans or photos, lets you refine glyphs and exports the typeface.'},
    tags:{es:['Tipografía','Vectorización','Exporta fuentes'],en:['Typography','Vectorizing','Font export']},
-   links:[{u:null,l:{es:'Abrir app',en:'Open app'}}] }, /* PENDIENTE: pega aquí el enlace de GitHub Pages de Paper Font Studio */
+   links:[{u:'https://goderickgrez-um.github.io/PaperfontStudio/',l:{es:'Abrir app',en:'Open app'}}] }, /* PENDIENTE: pega aquí el enlace de GitHub Pages de Paper Font Studio */
  { id:'naipe', kind:'tool', pal:['#0f3d2e','#7bb661'], shot:'assets/img/naipe.jpg',
    name:{es:'Naipe · Estudio de barajas',en:'Naipe · Deck studio'},
    desc:{es:'Diseña barajas inglesas, españolas o propias con edición masiva e individual, y expórtalas a PNG o PDF imprimible.',en:'Design English, Spanish or custom card decks with bulk and individual editing, and export to PNG or printable PDF.'},
