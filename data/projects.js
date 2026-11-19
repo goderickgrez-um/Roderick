@@ -39,5 +39,5 @@ window.PROJECTS = [
    name:{es:'Hub Providencia · Keypoint',en:'Hub Providencia · Keypoint'},
    desc:{es:'Sistema de reservas y registro de ingreso por QR o RUT para un coworking, con vistas de usuario y de administración. Proyecto capstone en equipo.',en:'Booking and QR/RUT check-in system for a coworking space, with user and admin views. Team capstone project.'},
    tags:{es:['Reservas','QR','Capstone'],en:['Bookings','QR','Capstone']},
-   links:[{u:'https://goderickgrez-um.github.io/Keypoint-hub-providencia/',l:{es:'Ver demo',en:'View demo'}}] }
+   links:[{u:'https://goderickgrez-um.github.io/keypoint-hub-providencia/',l:{es:'Ver demo',en:'View demo'}}] }
 ];
